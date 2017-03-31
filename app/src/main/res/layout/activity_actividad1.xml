@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/activity_main"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:paddingBottom="@dimen/activity_vertical_margin"
+android:paddingLeft="@dimen/activity_horizontal_margin"
+android:paddingRight="@dimen/activity_horizontal_margin"
+android:paddingTop="@dimen/activity_vertical_margin"
+tools:context="com.example.cecyt9.examen1_mora_guerrero_leon_sergio_6im7.Actividad1">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="46dp"
+    android:id="@+id/txtCantidad"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:hint="Cantidad a convertir" />
+
+<EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:inputType="textPersonName"
+    android:ems="10"
+    android:layout_below="@+id/txtCantidad"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="42dp"
+    android:id="@+id/cantidad"
+    android:hint="Pesos" />
+
+<Button
+    android:text="Convertir"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/cantidad"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="56dp"
+    android:id="@+id/btnConvertir"
+    android:onClick="onClickConvertir" />
+</RelativeLayout>
